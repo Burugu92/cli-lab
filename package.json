@@ -1,0 +1,27 @@
+{
+  "name": "rock-paper-scissors-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint bin/index.js src/lib/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "7.5.1",
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0"
+  },
+  "bin": {
+    "rockpaperscissors": "./bin/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0"
+  }
+}
